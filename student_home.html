@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Homepage</title>
+    <link rel="stylesheet" href="assets/styles/student_style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="assets/images/politeknik-logo.png" alt="Politeknik Logo">
+        <h1>LIMAS - Linen Management System</h1>
+    </div>
+
+    <div class="welcome-section">
+        <p>SELAMAT DATANG: <span id="student-name"></span></p>
+        <button onclick="logout()">LOG KELUAR</button>
+    </div>
+
+    <div class="buttons-section">
+        <button onclick="goToApplicationForm()">BORANG PERMOHONAN</button>
+        <button onclick="goToLoanCheck()">SEMAKAN PINJAMAN</button>
+    </div>
+
+    <script src="assets/scripts/student_app.js"></script>
+</body>
+</html>

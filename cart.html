@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="assets/styles/cart_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <table id="cart-items-table">
+            <thead>
+                <tr>
+                    <th>Butiran</th>
+                    <th>Tarikh Pinjam</th>
+                    <th>Tarikh Pulang</th>
+                    <th>Items Borrowed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be displayed here -->
+            </tbody>
+        </table>
+
+        <button onclick="linenSelect()">GO BACK TO LINEN SELECTION</button>
+        <button onclick="submitCart()">Submit Request</button>
+        <button onclick="goToHome()">Home Page</button>
+    </div>
+
+    <script src="assets/scripts/cart_app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "ic": "0000",
+            "name": "nur laila",
+            "password": "0000",
+            "role": "student"
+        },
+        {
+            "ic": "1111",
+            "name": "muhd ashraf",
+            "password": "1111",
+            "role": "student"
+        },
+        {
+            "ic": "2222",
+            "name": "syasya mira",
+            "password": "2222",
+            "role": "admin"
+        }
+    ]
+}

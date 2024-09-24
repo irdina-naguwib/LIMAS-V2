@@ -1,0 +1,76 @@
+{
+  "borrowed_items": [
+    {
+      "butiran": "nur laila",
+      "tarikh_pinjam": "2024-09-13",
+      "tarikh_pulang": "2024-09-29",
+      "items_borrowed": [
+        {
+          "name": "maroon flower",
+          "code": "TSM03"
+        },
+        {
+          "name": "dark blue",
+          "code": "TRDB01"
+        }
+      ],
+      "status": "returned",
+      "approver": "syasya mira",
+      "approval_date": "2024-09-24"
+    },
+    {
+      "butiran": "nur laila",
+      "tarikh_pinjam": "2024-09-11",
+      "tarikh_pulang": "2024-09-24",
+      "items_borrowed": [
+        {
+          "name": "peach",
+          "code": "TRP04"
+        }
+      ],
+      "status": "returned",
+      "approver": "syasya mira",
+      "approval_date": "2024-09-24"
+    },
+    {
+      "butiran": "muhd ashraf",
+      "tarikh_pinjam": "2024-09-11",
+      "tarikh_pulang": "2024-09-18",
+      "items_borrowed": [
+        {
+          "name": "maroon flower",
+          "code": "TSM06"
+        },
+        {
+          "name": "pink",
+          "code": "NPK16"
+        }
+      ],
+      "status": "pending",
+      "approver": null,
+      "approval_date": null
+    },
+    {
+      "butiran": "nur laila",
+      "tarikh_pinjam": "2024-09-19",
+      "tarikh_pulang": "2024-09-27",
+      "items_borrowed": [
+        {
+          "name": "dark blue",
+          "code": "SDB07"
+        },
+        {
+          "name": "black",
+          "code": "NB06"
+        },
+        {
+          "name": "cream flower",
+          "code": "CCF10"
+        }
+      ],
+      "status": "approved",
+      "approver": "syasya mira",
+      "approval_date": "2024-09-24"
+    }
+  ]
+}
