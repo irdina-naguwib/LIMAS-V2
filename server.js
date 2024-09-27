@@ -88,10 +88,6 @@ app.post('/api/borrowed-items/', (req, res) => {
     });
 });
 
-// Serve static files from the current directory and assets folder
-app.use(express.static(path.join(__dirname)));
-app.use(express.static(path.join(__dirname, 'assets')));
-
 // Start the server on port 3000
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
