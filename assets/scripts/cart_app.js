@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const tableBody = document.querySelector('#cart-items-table tbody');
     const loggedInUser = localStorage.getItem('loggedInUser');  // Fetch the logged-in user
+    const loggedInPhone = localStorage.getItem('loggedInPhone');
+    const loggedInMatric = localStorage.getItem('loggedInMatric');
     const cart = JSON.parse(localStorage.getItem('cart')) || [];  // Fetch the cart from localStorage
     const tarikhPinjam = localStorage.getItem('tarikhPinjam');  // Fetch Tarikh Pinjam
     const tarikhPulang = localStorage.getItem('tarikhPulang');  // Fetch Tarikh Pulang
@@ -13,30 +15,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fill in user details and borrowed items
     cart.forEach(item => {
-        const row = document.createElement('tr');
-
-        row.innerHTML = `
-            <td>${loggedInUser}</td>
-            <td>${tarikhPinjam ? tarikhPinjam : 'Not set'}</td>
-            <td>${tarikhPulang ? tarikhPulang : 'Not set'}</td>
-            <td>${item.name} (${item.code})</td>
+        const itemCard = document.createElement('div');
+        itemCard.classList.add('cart-item');
+    
+        // Construct image URL
+        const imageUrl = `assets/images/${item.name.replace(/\s+/g, '_').toLowerCase()}.jpg`;
+    
+        itemCard.innerHTML = `
+            <img src="${imageUrl}" alt="${item.name}" />
+            <div class="cart-item-details">
+                <h2>${item.name} (${item.code})</h2>
+                <p>${loggedInUser} <br> ${loggedInPhone} <br> ${loggedInMatric}</p>
+                <p>Requested Date: ${tarikhPinjam ? tarikhPinjam : 'Not set'}</p>
+                <p>Returned Date: ${tarikhPulang ? tarikhPulang : 'Not set'}</p>
+            </div>
         `;
-
-        tableBody.appendChild(row);
+    
+        document.getElementById('cart-items-container').appendChild(itemCard);
     });
 });
 
 // Function to submit the cart and go to semakan pinjaman page
 function submitCart() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || []; // Fetch the cart again
     const tarikhPinjam = localStorage.getItem('tarikhPinjam');
     const tarikhPulang = localStorage.getItem('tarikhPulang');
+
+    // Check if the cart is empty
+    if (cart.length === 0) {
+        alert('Your cart is empty. Please add items before submitting.');
+        return; // Prevent submission
+    }
 
     if (!tarikhPinjam || !tarikhPulang) {
         alert('Please make sure both borrow and return dates are set.');
         return;
     }
 
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const loggedInUser = localStorage.getItem('loggedInUser');
 
     // Prepare the borrow data for submission
@@ -74,7 +89,7 @@ function goToHome() {
     window.location.href = 'student_home.html';
 }
 
-// Navigation to home page
+// Navigation to linen selection page
 function linenSelect() {
     window.location.href = 'linen_selection.html';
 }

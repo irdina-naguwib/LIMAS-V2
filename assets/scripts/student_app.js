@@ -1,7 +1,7 @@
 // Fetch user data from the previous login state
 document.addEventListener('DOMContentLoaded', function() {
     const studentName = localStorage.getItem('loggedInUser');
-    document.getElementById('student-name').textContent = studentName || 'Student';
+    document.getElementById('student-name').textContent = (studentName || 'Student').toUpperCase();
 });
 
 // Go to Borang Permohonan Page

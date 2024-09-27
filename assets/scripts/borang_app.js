@@ -1,9 +1,16 @@
 // Load the logged-in user's name into the Butiran field
 document.addEventListener('DOMContentLoaded', function() {
     const loggedInUser = localStorage.getItem('loggedInUser');
+    const loggedInPhone = localStorage.getItem('loggedInPhone');
+    const loggedInMatric = localStorage.getItem('loggedInMatric');
+    console.log(loggedInMatric);
+    console.log(loggedInUser);
+    console.log(loggedInPhone);
 
     if (loggedInUser) {
-        document.getElementById('butiran').value = loggedInUser;  // Auto-fill the butiran field
+        document.getElementById('butiran').value = loggedInUser.toUpperCase();  // Auto-fill the butiran field
+        document.getElementById('phone').value = loggedInPhone;  // Auto-fill the butiran field
+        document.getElementById('matrix').value = loggedInMatric;  // Auto-fill the butiran field
     } else {
         alert('No logged-in user found. Please log in.');
         window.location.href = 'login.html';  // Redirect to login page if no user is logged in

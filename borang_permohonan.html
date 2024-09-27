@@ -8,34 +8,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>BORANG PERMOHONAN LIMAS</h1>
+        <h1>LIMAS APPLICATION FORM</h1>
         <p>
-            Makluman: pemohon hendaklah melengkapkan borang di bawah mengikut jenis permohonan yang dinyatakan. 
-            Sila isikan butiran dan klik butang simpan.
+            Note: Please complete the form below according to the specified type of application. Please fill in the details and click the save button.
         </p>
 
         <form id="permohonanForm">
-            <label for="butiran">Butiran Permohon:</label>
+            <label for="butiran">FULL NAME:</label>
             <input type="text" id="butiran" name="butiran" readonly>
 
-            <label for="phone">No H/P:</label>
-            <input type="text" id="phone" name="phone" required>
+            <label for="phone">PHONE NUMBER:</label>
+            <input type="text" id="phone" name="phone" readonly>
 
-            <label for="matrix">No Matrik:</label>
-            <input type="text" id="matrix" name="matrix" required>
+            <label for="matrix">MATRIC NO:</label>
+            <input type="text" id="matrix" name="matrix" readonly>
 
-            <label for="kelas">Kelas:</label>
+            <label for="kelas">CLASS:</label>
             <input type="text" id="kelas" name="kelas" required>
 
-            <label for="tarikh_pinjam">Tarikh Pinjam:</label>
+            <label for="tarikh_pinjam">REQUESTED DATE:</label>
             <input type="date" id="tarikh_pinjam" name="tarikh_pinjam" required>
 
-            <label for="tarikh_pemulangan">Tarikh Pemulangan:</label>
+            <label for="tarikh_pemulangan">RETURNED DATE:</label>
             <input type="date" id="tarikh_pemulangan" name="tarikh_pemulangan" required>
 
             <div class="buttons">
                 <button type="button" onclick="goToHome()">HOME PAGE</button>
-                <button type="submit">SETERUSNYA</button>
+                <button type="submit">NEXT</button>
             </div>
         </form>
     </div>

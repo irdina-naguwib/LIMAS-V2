@@ -1,7 +1,7 @@
 // Fetch user data from the previous login state
 document.addEventListener('DOMContentLoaded', function() {
     const loggedInUser = localStorage.getItem('loggedInUser');
-    document.getElementById('admin').textContent = loggedInUser || 'admin';
+    document.getElementById('admin').textContent = (loggedInUser || 'admin').toUpperCase();
 });
 
 let borrowedItems = [];

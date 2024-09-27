@@ -78,7 +78,7 @@ function filterLinen() {
                     <option value="">Select Code</option>
                     ${item.codes.map(code => `<option value="${code}">${code}</option>`).join('')}
                 </select>
-                <button onclick="addToCart('${item.name}', 'linen-${item.name}')">Add to Cart</button>
+                <button onclick="addToCart('${item.name}', 'linen-${item.name}')">ADD TO CART</button>
             `;
             results.appendChild(linenElement);
         }

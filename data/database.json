@@ -1,22 +1,31 @@
 {
-    "users": [
-        {
-            "ic": "0000",
-            "name": "nur laila",
-            "password": "0000",
-            "role": "student"
-        },
-        {
-            "ic": "1111",
-            "name": "muhd ashraf",
-            "password": "1111",
-            "role": "student"
-        },
-        {
-            "ic": "2222",
-            "name": "syasya mira",
-            "password": "2222",
-            "role": "admin"
-        }
-    ]
+  "users": [
+    {
+      "name": "John Doe",
+      "ic": "0000",
+      "matric": "0000",
+      "phone": "0000",
+      "email": "john@example.com",
+      "password": "0000",
+      "role": "student"
+    },
+    {
+      "name": "Mira",
+      "ic": "1111",
+      "matric": "1111",
+      "phone": "1111",
+      "email": "john@example.com",
+      "password": "1111",
+      "role": "admin"
+    },
+    {
+      "name": "2222",
+      "ic": "2222",
+      "matric": "2222",
+      "phone": "2222",
+      "email": "2222@gmail.com",
+      "password": "2222",
+      "role": "student"
+    }
+  ]
 }

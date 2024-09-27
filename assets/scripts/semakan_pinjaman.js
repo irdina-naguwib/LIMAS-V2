@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const tableBody = document.querySelector('#borrowed-items-table tbody');
     const loggedInUser = localStorage.getItem('loggedInUser'); // Assume user is stored in localStorage
+    const loggedInPhone = localStorage.getItem('loggedInPhone');
+    const loggedInMatric = localStorage.getItem('loggedInMatric');
 
     // Fetch borrowed items from the JSON database
     fetch('/api/borrowed-items')  // Make sure this matches the route defined in your Node.js server
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
 
                 row.innerHTML = `
-                    <td>${item.butiran}</td>
+                    <td>${item.butiran} <br> ${loggedInPhone} <br> ${loggedInMatric}</td>
                     <td>${item.tarikh_pinjam}</td>
                     <td>${item.tarikh_pulang}</td>
                     <td>${itemsList}</td>

@@ -1,0 +1,114 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e0e7ff);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #007aff;
+    font-weight: 700;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block; /* Ensures label takes full width */
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fff; /* White background for dropdown */
+    appearance: none; /* Remove default styling */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    vertical-align: middle; /* Center vertically */
+}
+
+th {
+    background-color: #3f2b96; /* Using your color theme */
+    color: white;
+}
+
+tbody tr {
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Light hover effect */
+}
+
+td {
+    border-bottom: 1px solid #eaeaea;
+}
+
+td select {
+    width: 100%; /* Full width for the dropdowns */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* White background for dropdown */
+}
+
+.button {
+    background-color: #ff3b30; /* Red color for logout */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Make button full-width */
+    margin-top: 20px; /* Space above the button */
+}
+
+.button:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+/* Style for the table to ensure status text is fully visible */
+td:nth-child(5), /* Status */
+td:nth-child(6), /* Approver */
+td:nth-child(7) { /* Approval Date */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+td:nth-child(5) {
+    width: 150px; /* Set width for Status column */
+}
+
+td:nth-child(6) {
+    width: 150px; /* Set width for Approver column */
+}
+
+td:nth-child(7) {
+    width: 150px; /* Set width for Approval Date column */
+}

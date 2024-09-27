@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Home</title>
-    <link rel="stylesheet" href="assets/style/admin_home.css">
+    <link rel="stylesheet" href="assets/styles/admin_home.css">
 </head>
 <body>
-    <h1>SELAMAT DATANG: <span id="admin"></span></h1>
+    <h1>WELCOME: <span id="admin"></span></h1>
 
     <label for="statusFilter">Filter by Status:</label>
     <select id="statusFilter" onchange="filterTable()">
@@ -20,14 +20,14 @@
     <table id="borrowedItemsTable">
         <thead>
             <tr>
-                <th>Butiran</th>
-                <th>Tarikh Pinjam</th>
-                <th>Tarikh Pulang</th>
-                <th>Items Borrowed</th>
-                <th>Status</th>
-                <th>Approver</th>
-                <th>Approval Date</th>
-                <th>Actions</th>
+                <th>DETAILS</th>
+                <th>REQUESTED DATE</th>
+                <th>RETURNED DATE</th>
+                <th>ITEMS BORROWED</th>
+                <th>STATUS</th>
+                <th>APPROVER</th>
+                <th>APPROVAL DATE</th>
+                <th>ACTIONS</th>
             </tr>
         </thead>
         <tbody>
@@ -35,7 +35,7 @@
         </tbody>
     </table>
 
-    <button onclick="logout()">LOG KELUAR</button>
+    <button onclick="logout()">LOG OUT</button>
 
     <script src="assets/scripts/admin_home.js"></script>
 </body>
