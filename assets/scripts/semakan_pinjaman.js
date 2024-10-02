@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     statusColor = 'yellow';
                     statusText = 'Pending';
                 } else if (item.status === 'approved') {
-                    statusColor = 'blue';
+                    statusColor = 'green';
                     statusText = `Approved by ${item.approver} on ${item.approval_date}`;
                 } else if (item.status === 'returned') {
                     statusColor = 'green';

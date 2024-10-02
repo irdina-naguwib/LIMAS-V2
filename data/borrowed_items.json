@@ -6,20 +6,8 @@
       "tarikh_pulang": "2024-10-04",
       "items_borrowed": [
         {
-          "name": "Tablecloth Square White",
-          "code": "TSW10"
-        },
-        {
-          "name": "Tablecloth Rectangle Dark Blue",
-          "code": "TRDB06"
-        },
-        {
-          "name": "Tablecloth Circle Maroon With Skirting",
-          "code": "TCMS09"
-        },
-        {
-          "name": "Tablecloth Circle Maroon With Skirting",
-          "code": "TCMS09"
+          "name": "Tablecloth Square Maroon Flower",
+          "code": "TSM09"
         }
       ],
       "status": "approved",
@@ -50,9 +38,23 @@
           "code": "TSM07"
         }
       ],
-      "status": "pending",
-      "approver": null,
-      "approval_date": null
+      "status": "approved",
+      "approver": "Mira",
+      "approval_date": "2024-09-27"
+    },
+    {
+      "butiran": "John Doe",
+      "tarikh_pinjam": "2024-09-28",
+      "tarikh_pulang": "2024-09-30",
+      "items_borrowed": [
+        {
+          "name": "Tablecloth Square Maroon Flower",
+          "code": "TSM01"
+        }
+      ],
+      "status": "approved",
+      "approver": "Mira",
+      "approval_date": "2024-09-27"
     }
   ]
 }
